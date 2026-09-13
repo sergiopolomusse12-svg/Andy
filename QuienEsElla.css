@@ -21,10 +21,6 @@ header {
     
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .Logo {
     display: flex;
     align-items: center;
@@ -66,13 +62,12 @@ main {
     background: rgba(18, 57, 92, 0.55);
     backdrop-filter: blur(5px);
     width: 70%;
-    
     margin: 60px auto;
     padding: 40px;
     text-align: center;
     border: 1px solid rgba(137, 207, 240, 0.35);
     border-radius: 15px;
-    scroll-margin-top: 300px;
+   
 }
 
 .imagen1 {
