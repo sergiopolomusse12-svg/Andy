@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("Fondo3.jpg") center/cover fixed;
+    color: #F5F9FF;
+}
+
+header {
+    width: 100%;
+    padding: 15px 30px;
+    background: #0B2A4A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.Logo h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #F5F9FF;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background: #12395C;
+}
+
+main {
+    padding: 60px 20px;
+}
+
+.tarjeta {
+    background: rgba(18, 57, 92, 0.55);
+    backdrop-filter: blur(5px);
+    width: 65%;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid rgba(137, 207, 240, 0.35);
+    border-radius: 15px;
+    scroll-margin-top: 300px;
+}
+
+.tarjeta h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(77, 163, 255, 0.2);
+    color: #F5F9FF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: #4DA3FF;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #0B2A4A;
+    color: #F5F9FF;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tarjeta {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
