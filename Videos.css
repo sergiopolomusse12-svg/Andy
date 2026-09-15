@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("Fondo10.jpg") center/cover fixed;
+    color: #F5F9FF;
+}
+
+header {
+    width: 100%;
+    padding: 15px 30px;
+    background: #0B1D33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.Logo h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #F5F9FF;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background: #123a5c;
+}
+
+main {
+    padding: 60px 20px;
+}
+
+.tarjeta {
+    background: rgba(18, 57, 92, 0.55);
+    backdrop-filter: blur(5px);
+    width: 70%;
+    margin: 60px auto;
+    padding: 40px;
+    border: 1px solid rgba(137, 207, 240, 0.35);
+    border-radius: 15px;
+}
+
+video {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}
+
+.imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    gap: 10px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tarjeta {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
