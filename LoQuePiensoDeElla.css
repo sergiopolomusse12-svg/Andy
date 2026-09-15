@@ -7,14 +7,14 @@
 
 body {
     min-height: 100vh;
-    background: url("Fondo8.jpg") center/cover fixed;
+    background: url("Fondo9.jpg") center/cover fixed;
     color: #F5F9FF;
 }
 
 header {
     width: 100%;
     padding: 15px 30px;
-    background: #176B9E;
+    background: #071A2B;
     display: flex;
     justify-content: space-between;
     align-items: center;
