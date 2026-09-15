@@ -21,10 +21,6 @@ header {
     
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .Logo {
     display: flex;
     align-items: center;
