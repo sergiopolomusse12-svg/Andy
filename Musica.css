@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("Fondo7.jpg") center/cover fixed;
+    color: #F5F9FF;
+}
+
+header {
+    width: 100%;
+    padding: 15px 30px;
+    background: #0B1D33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.Logo h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #F5F9FF;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background: #123a5c;
+}
+
+main {
+    padding: 60px 20px;
+}
+
+.tarjeta {
+    background: rgba(18, 57, 92, 0.55);
+    backdrop-filter: blur(5px);
+    width: 70%;
+    margin: 60px auto;
+    padding: 40px;
+    border: 1px solid rgba(137, 207, 240, 0.35);
+    border-radius: 15px;
+}
+
+.reproductor {
+    width: 450px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(5, 20, 38, 0.85);
+    backdrop-filter: blur(10px);
+    color: white;
+    box-sizing: border-box;
+}
+.reproductor {
+    width: 450px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(5, 20, 38, 0.85);
+    backdrop-filter: blur(10px);
+    color: white;
+    box-sizing: border-box;
+}
+
+.reproductor img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 15px;
+    float: left;
+    margin-right: 18px;
+}
+
+.info {
+    padding-top: 10px;
+}
+
+.info h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.info p {
+    margin: 0;
+    opacity: 0.7;
+}
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 30px auto 20px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #7EC8E3;
+    color: #0B1D33;
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.play:hover {
+    transform: scale(1.08);
+}
+
+
+.barra-tiempo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+}
+
+.progreso {
+    flex: 1;
+    cursor: pointer;
+}
+
+.tiempo-actual,
+.duracion {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.volumen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.control-volumen {
+    width: 100px;
+    cursor: pointer;
+}
+
+.boton-letra,
+.boton-traduccion {
+    display: inline-block;
+
+    margin-top: 25px;
+    margin-right: 8px;
+
+    padding: 10px 22px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #7EC8E3;
+    color: #0B1D33;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.boton-letra:hover,
+.boton-traduccion:hover {
+    transform: scale(1.05);
+}
+
+.letra,
+.traduccion {
+    display: none;
+
+    margin-top: 20px;
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    line-height: 1.8;
+
+    text-align: center;
+
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+audio {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tarjeta {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
